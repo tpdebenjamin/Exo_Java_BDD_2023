@@ -49,15 +49,7 @@
 <p> La lettre 'e' apparait : <% out.print(compteur); %> fois </p>
 
 <h2>Exercice 2 : Affichage verticale</h2>
-<p>Ecrire le programme pour afficher le texte en vertical</br>
-Exemple : Bonjour</br>
-B</br>
-o</br>
-n</br>
-j</br>
-o</br>
-u</br>
-r</p>
+<p>Ecrire le programme pour afficher le texte en vertical</p>
 
 <%
     for(int i = 0; i < chaine.length(); i++) {
@@ -67,11 +59,7 @@ r</p>
 %>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
-<p>La présence d'un espace provoque un retour à la ligne </br>
-Exemple : L'hiver sera pluvieux</br>
-L'hiver</br>
-sera</br>
-pluvieux</p>
+<p>La présence d'un espace provoque un retour à la ligne </p>
 <%
     for(int i = 0; i < chaine.length(); i++) {
        if(chaine.charAt(i) == ' ') {
@@ -84,8 +72,8 @@ pluvieux</p>
 %>
 <h2>Exercice 4 : Afficher une lettre sur deux</h2>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
-Exemple : L'hiver sera pluvieux</br>
-Lhvrsr lvex</p>
+</br>
+</p>
 <%
     for(int i = 0; i < chaine.length(); i++) {
        if(i%2 == 0) {
@@ -97,7 +85,7 @@ Lhvrsr lvex</p>
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
 </br>
-xueivulp ares revih'l</p>
+</p>
 <%
     for(int i = chaine.length() -1; i >= 0; i--) {
        out.print(chaine.charAt(i));
